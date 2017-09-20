@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSLuisLibraries", "MSLuisLibraries\MSLuisLibraries.csproj", "{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSLuisLibraries", "MSLuisLibraries\MSLuisLibraries.csproj", "{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSLuisLibraries.UnitTest", "MSLuisLibraries.UnitTest\MSLuisLibraries.UnitTest.csproj", "{41BA60F0-8E7E-4C7D-96E5-7589BB7E1270}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BA60F0-8E7E-4C7D-96E5-7589BB7E1270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BA60F0-8E7E-4C7D-96E5-7589BB7E1270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BA60F0-8E7E-4C7D-96E5-7589BB7E1270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BA60F0-8E7E-4C7D-96E5-7589BB7E1270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
