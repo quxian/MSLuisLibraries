@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>郑永生</Authors>
+    <Company>个人</Company>
+    <Description>微软人工智能平台（LUIS）API库</Description>
+    <PackageProjectUrl>https://github.com/quxian/MSLuisLibraries</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/quxian/MSLuisLibraries</RepositoryUrl>
+    <PackageTags>LUIS</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
