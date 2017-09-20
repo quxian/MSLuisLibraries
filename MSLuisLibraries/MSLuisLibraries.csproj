@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/quxian/MSLuisLibraries</RepositoryUrl>
     <PackageTags>LUIS</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

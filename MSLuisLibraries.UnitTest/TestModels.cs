@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSLuisLibraries.Entities;
 using MSLuisLibraries.Interface;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MSLuisLibraries.UnitTest {
@@ -33,20 +34,22 @@ namespace MSLuisLibraries.UnitTest {
         [TestMethod]
         public async Task CreateClosedListEntityAsync() {
             var closedListEntity = new ClosedListEntity {
-                name = "测试",
+                name = "城市",
                 subLists = new Sublist[] {
                    new Sublist {
-                       canonicalForm = "城市",
+                       canonicalForm = "北京",
                        list = new string[] {
                            "北京",
-                           "上海"
+                           "北京市",
+                           "京"
                        }
                    },
                    new Sublist {
-                       canonicalForm = "景区",
+                       canonicalForm = "上海",
                        list = new string[] {
-                           "故宫",
-                           "长城"
+                           "上海",
+                           "上海市",
+                           "沪"
                        }
                    }
                }
@@ -68,26 +71,39 @@ namespace MSLuisLibraries.UnitTest {
         public async Task UpdateClosedListSublistAsync() {
             var entities = await _luis.Models.GetClosedListEntityAsync();
 
+            var entity = entities
+                 .ToList()
+                 .Find(it => it.name == "城市");
+
+            var id = entity.id;
+
+            var subEntity = entity
+                .subLists
+                .ToList()
+                .Find(it => it.canonicalForm == "北京");
+            var subId = subEntity.id;
+
             var list = new List<string>();
             list.AddRange(entities[0].subLists[0].list);
-            list.Add("新的");
+            list.Add("jing");
+            list.Add("beijing");
 
             var subList = new Sublist {
-                canonicalForm = entities[0].subLists[0].canonicalForm,
+                canonicalForm = "北京",
                 list = list.ToArray()
             };
 
-            await _luis.Models.UpdateClosedListSublistAsync(entities[0].id, entities[0].subLists[0].id, subList);
+            await _luis.Models.UpdateClosedListSublistAsync(id, subId, subList);
         }
 
         [TestMethod]
         public async Task AddClosedListSublistAsync() {
             var entities = await _luis.Models.GetClosedListEntityAsync();
             var subList = new Sublist {
-                canonicalForm = "test",
+                canonicalForm = "郑州",
                 list = new string[] {
-                    "t1",
-                    "t2"
+                    "郑州",
+                    "郑州市"
                 }
             };
 
