@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSLuisLibraries", "MSLuisLibraries\MSLuisLibraries.csproj", "{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EC8BD5-0676-4AA9-8083-77F1A0D30FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD81D9DA-C9C6-48D3-8C88-A1D1E6F6F1A4}
+	EndGlobalSection
+EndGlobal
